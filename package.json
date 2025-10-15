@@ -1,9 +1,9 @@
 {
   "name": "prpl-theme",
-  "displayName": "prpl Theme",
+  "displayName": "prpl-theme",
   "publisher": "ocodo",
   "description": "it is prpl",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "repository": {
     "type": "git",
     "url": "https://github.com/ocodo/prpl-theme.git"
