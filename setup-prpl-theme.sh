@@ -11,13 +11,17 @@ THEME_FILE="${THEME_NAME}-color-theme.json"
 # Create the extension directory structure
 mkdir -p "${EXT_DIR}/themes"
 
-# Create a minimal package.json
+# Create a minimal package.json with GitHub repository info
 cat > "${EXT_DIR}/package.json" <<EOF
 {
   "name": "${EXT_NAME}",
   "displayName": "prpl Theme",
   "description": "it is prpl",
   "version": "${VERSION}",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocodo/prpl-theme.git"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },

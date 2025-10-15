@@ -1,0 +1,23 @@
+{
+  "name": "prpl-theme",
+  "displayName": "prpl Theme",
+  "description": "it is prpl",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocodo/prpl-theme.git"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "prpl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/prpl-color-theme.json"
+      }
+    ]
+  }
+}
