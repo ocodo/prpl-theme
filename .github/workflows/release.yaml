@@ -39,5 +39,5 @@ jobs:
         run: |
           gh release create "$tag_name" --repo="ocodo/prpl-theme" --title="ocodo prpl theme - $tag_name"
           gh release upload "$tag_name" *.vsix
-          vsce publish
+
 
