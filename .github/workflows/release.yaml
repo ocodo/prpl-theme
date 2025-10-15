@@ -1,4 +1,4 @@
-0;10;1cname: Release prpl vsix 
+name: Release prpl vsix 
 
 on:
   push:
