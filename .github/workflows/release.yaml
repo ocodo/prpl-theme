@@ -3,7 +3,7 @@ name: Release VSIX
 on:
   push:
     tags:
-      - 'v*.*.*'   # Trigger on semver tags like v1.0.0, v2.3.4
+      - 'v*.*.*'  # Trigger on semver tags like v1.0.0
 
 jobs:
   build-and-release:
@@ -13,19 +13,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node.js  # Use Node 22 LTS for compatibility
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
 
-      - name: Install vsce
+      - name: Install vsce globally
         run: npm install -g @vscode/vsce
 
       - name: Get version from package.json
         id: get_version
         run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Package extension
         run: vsce package
