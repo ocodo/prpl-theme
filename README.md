@@ -17,3 +17,14 @@ npm install -g @vscode/vsce
 vsce package
 code --install-extension prpl-theme-0.0.1.vsix
 ```
+
+
+## Optional zsh ls_colors support
+
+Download `ls_colors` and source in your `.zshrc`
+
+```
+source ./ls_colors 
+```
+
+For bash download and edit `ls_color` and remove/comment the `zstyle` line
